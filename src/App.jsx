@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Sun, Moon, Mail, Linkedin, ExternalLink, ChevronRight, Send, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Img from './assets/afshan.jpg';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -224,7 +225,7 @@ export default function App() {
               whileHover={{ scale: 1.05 }}
               className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-400"
             >
-              <img src="/api/placeholder/400/400" alt="Mohammed Afshan" className="w-full h-full object-cover" />
+              <img src={Img } alt="Mohammed Afshan" className="w-full h-full object-cover" />
             </motion.div>
           </motion.div>
         </div>
