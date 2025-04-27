@@ -255,7 +255,7 @@ export default function App() {
             className="max-w-3xl mx-auto text-lg leading-relaxed"
           >
             <p className="mb-4">
-              Highly motivated B.Tech ECE student with strong programming skills in C, Java, and Python. Proficient in data structures, algorithms, and web development (HTML, CSS, SQL). Excellent soft skills in teamwork, communication, and problem-solving. Passionate about digital technologies and innovation.
+              Highly motivated B.Tech ECE student with strong programming skills in C, Java, and Data structures. Proficient in data structures, algorithms, and web development (HTML, CSS, SQL). Excellent soft skills in teamwork, communication, and problem-solving. Passionate about digital technologies and innovation.
             </p>
             <p>
               With a strong desire to make a positive impact, I actively participate in social causes and volunteer work, helping those in need and contributing to the betterment of my community.
@@ -415,7 +415,7 @@ export default function App() {
               <div className="mb-4">
                 <h3 className="text-xl font-semibold">Treasurer</h3>
                 <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  Bachpan Prayers
+                  Bachpan Prayas
                 </p>
               </div>
               <p className="mb-4">
