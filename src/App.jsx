@@ -304,6 +304,132 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* Experience Section */}
+<section className={`py-16 ${darkMode ? 'bg-gray-800' : 'bg-white'} transition-all duration-300`}>
+  <div className="container mx-auto px-4">
+    <motion.h2 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="text-3xl font-bold mb-12 text-center"
+    >
+      Experience
+    </motion.h2>
+    <div className="max-w-4xl mx-auto">
+      {/* Experience 1 */}
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className={`mb-10 p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-gray-100'} shadow-lg`}
+      >
+        <div className="flex flex-col md:flex-row justify-between mb-4">
+          <h3 className="text-xl font-semibold">Technical Business Analyst Intern</h3>
+          <a 
+            href="https://webhostdevs.com/" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="flex items-center text-blue-500 hover:underline"
+          >
+            WebHostDevs <ExternalLink size={14} className="ml-1" />
+          </a>
+        </div>
+        <p className="mb-4">
+          Worked closely with clients and development teams to analyze requirements, prepare detailed 
+          business documentation, and facilitate effective communication between technical and client teams.
+        </p>
+        <p className="mb-4">
+          Contributed actively to project planning sessions and proposed actionable improvements to existing 
+          processes, enhancing overall efficiency and client satisfaction.
+        </p>
+        <div className="flex flex-wrap gap-2 mt-4">
+          {['Business Analysis', 'Communication', 'Project Management', 'Documentation'].map((skill, index) => (
+            <span 
+              key={index} 
+              className={`text-sm px-3 py-1 rounded-full ${darkMode ? 'bg-gray-600' : 'bg-gray-200'}`}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </motion.div>
+      
+      {/* Experience 2 */}
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className={`mb-10 p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-gray-100'} shadow-lg`}
+      >
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold">Deputy Corporate Lead</h3>
+          <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+            Career Development Centre (CDC)
+          </p>
+        </div>
+        <p className="mb-4">
+          Managed corporate relationships with potential recruiters and established companies to secure placement 
+          opportunities for students.
+        </p>
+        <p className="mb-4">
+          Maintained consistent communication with industry partners, organized corporate networking events, 
+          and helped enhance the institute's placement reputation.
+        </p>
+      </motion.div>
+      
+      {/* Experience 3 */}
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className={`mb-10 p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-gray-100'} shadow-lg`}
+      >
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold">Student Placement Committee Member</h3>
+          <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+            Career Development Centre (CDC)
+          </p>
+        </div>
+        <p className="mb-4">
+          Assisted in coordinating placement activities between students and recruiters, ensuring seamless 
+          communication and scheduling of interviews and assessments.
+        </p>
+        <p className="mb-4">
+          Organized placement preparation workshops, mock interviews, and career guidance sessions to help 
+          students enhance their employability and interview performance.
+        </p>
+      </motion.div>
+      
+      {/* Experience 4 */}
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className={`p-6 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-gray-100'} shadow-lg`}
+      >
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold">Treasurer</h3>
+          <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+            Bachpan Prayers
+          </p>
+        </div>
+        <p className="mb-4">
+          Managed financial operations including budgeting for events, tracking expenditures, and maintaining 
+          accurate and transparent financial records.
+        </p>
+        <p className="mb-4">
+          Optimized resource allocation, implemented financial controls, and provided regular financial reports 
+          to ensure the organization's fiscal health and accountability.
+        </p>
+      </motion.div>
+    </div>
+  </div>
+</section>
 
       {/* Journey (Timeline) Section */}
       <section ref={journeyRef} className={`py-16 ${darkMode ? 'bg-gray-800' : 'bg-white'} transition-all duration-300`}>
