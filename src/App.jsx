@@ -2,6 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Sun, Moon, Mail, Linkedin, ExternalLink, ChevronRight, Send, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Img from './assets/afshan.jpg';
+import Hotstar from './assets/hotstar.png';
+import netflix from './assets/netflix.png';
+import Google from './assets/google.png';
+import shoe from './assets/shoe.png';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -59,22 +63,22 @@ export default function App() {
   const projects = [
     {
       title: "Hotstar Clone",
-      image: "/api/placeholder/500/300",
+      image:Hotstar,
       link: "https://afshan-jio-hotstar.netlify.app/"
     },
     {
       title: "Netflix Clone",
-      image: "/api/placeholder/500/300",
+      image: netflix,
       link: "https://mdafshan-ntflixclone-1.netlify.app/"
     },
     {
       title: "Google Clone",
-      image: "/api/placeholder/500/300",
+      image: Google,
       link: "https://afshan-google-clone.netlify.app/"
     },
     {
       title: "Shoe Website",
-      image: "/api/placeholder/500/300",
+      image: shoe,
       link: "https://afshan-shoe-website-bs1.netlify.app/"
     }
   ];
